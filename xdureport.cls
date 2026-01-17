@@ -7,6 +7,18 @@
 \RequirePackage{lipsum}
 \RequirePackage{zhlipsum}
 \RequirePackage{xcolor}
+% 超链接支持
+\RequirePackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % 彩色链接
+    linkcolor=blue,        % 内部链接颜色
+    filecolor=magenta,     % 文件链接颜色
+    urlcolor=cyan,         % URL链接颜色
+    citecolor=green,       % 引用链接颜色
+    bookmarksnumbered=true,% 书签编号
+    pdfstartview=FitH,     % 适合宽度
+    unicode=true           % 支持Unicode
+}
 % 代码高亮方案宏包
 \RequirePackage{listings}
 % \setmainfont{texgyrepagella-regular.otf} 
@@ -44,7 +56,7 @@
     \vspace{1cm}
     \bfseries\huge{\@course}\\
     \vspace{0.5cm}
-    \bfseries\Large{实验名称：\@expname}
+    \bfseries\Large{\@expname}
     \vspace{2cm}
     \begin{center}
       \large
